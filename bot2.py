@@ -19,7 +19,7 @@ search3 = ('cefet')
 searchR = ('cefet')
 
 numeroDeTweetsR = 0
-numeroDeTweets = 500
+numeroDeTweets = 10
 numeroDeTweets2 = 5
 
 def pesquisar():
@@ -78,7 +78,7 @@ def pesquisa3():
 
 schedule.every(10).seconds.do(pesquisar)
 schedule.every(60).seconds.do(pesquisa2)
-schedule.every(3000).seconds.do(pesquisa3)
+#schedule.every(3000).seconds.do(pesquisa3)
 #schedule.every(60).seconds.do(resposta)
 while True:
     schedule.run_pending()
